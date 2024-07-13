@@ -14,9 +14,12 @@ const Navbar = (props: Props) => {
             className="fixed top-0 left-0 right-0 flex justify-evenly items-center gap-2 h-16 
         bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[1rem] border-b border-gray-700"
         >
+            {/* Name logo */}
             <div>
                 <Image src={logo} alt="logo" />
             </div>
+
+            {/* Navbar links */}
             <div className="flex items-center justify-center gap-2 text-gray-200">
                 {navBarNames.map((item, ind) => (
                     <div key={ind} className="flex items-center">
@@ -32,8 +35,9 @@ const Navbar = (props: Props) => {
                 ))}
             </div>
 
+            {/* Search bar */}
             <div
-                className="flex w-[25%] px-3 py-2 items-center justify-start rounded-2xl 
+                className="flex w-[25%] px-3 py-2 items-center justify-start rounded-full 
             gap-3 bg-opacity-30 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] border border-gray-700"
             >
                 <BiSearch className="h-6 w-6" />
@@ -43,6 +47,7 @@ const Navbar = (props: Props) => {
                 />
             </div>
 
+            {/* Auth buttons */}
             <div className="flex items-center justify-center gap-4">
                 <div className="rounded-full p-3 border border-yellow-700">
                     <Image src={live_tv} alt="live_tv" />

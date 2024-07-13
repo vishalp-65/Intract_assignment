@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
+import Quests from "@/components/Quests";
 import heroBg from "@/public/images/hero_bg.png";
 import Image from "next/image";
 
@@ -12,6 +13,10 @@ export default function Home() {
                 style={{ backgroundImage: `url(${heroBg.src})` }}
             >
                 <HeroSection />
+
+                <div className="px-10">
+                    <Quests />
+                </div>
             </div>
         </div>
     );
