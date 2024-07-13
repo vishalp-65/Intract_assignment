@@ -11,7 +11,7 @@ type Props = {};
 const Navbar = (props: Props) => {
     return (
         <div
-            className="fixed top-0 left-0 right-0 flex justify-evenly items-center gap-2 h-16 
+            className="fixed top-0 left-0 right-0 flex justify-evenly items-center gap-2 h-16 z-50
         bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[1rem] border-b border-gray-700"
         >
             {/* Name logo */}
@@ -42,8 +42,8 @@ const Navbar = (props: Props) => {
             >
                 <BiSearch className="h-6 w-6" />
                 <input
-                    className="bg-transparent bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]"
-                    placeholder="Search for ecosystem,trending quests etc."
+                    className="bg-transparent text-sm bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] w-full"
+                    placeholder="Search for ecosystem, trending quests etc."
                 />
             </div>
 

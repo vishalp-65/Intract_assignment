@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import LearnerNFT from "@/components/LearnerNFT";
 import Navbar from "@/components/Navbar";
 import Quests from "@/components/Quests";
 import heroBg from "@/public/images/hero_bg.png";
@@ -14,8 +15,11 @@ export default function Home() {
             >
                 <HeroSection />
 
-                <div className="px-10">
+                <div className="px-10 mt-[-6rem] relative z-10">
                     <Quests />
+                    <div className="absolute bottom-32 right-14">
+                        <LearnerNFT />
+                    </div>
                 </div>
             </div>
         </div>

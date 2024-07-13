@@ -10,7 +10,7 @@ const HeroSection = (props: Props) => {
         <div className="flex flex-col items-center justify-center h-full gap-10">
             <div className="text-start">
                 <p className="text-xl text-gray-200">Intract</p>
-                <p className="font-serif text-5xl font-bold">Academy</p>
+                <p className="font-serif text-6xl font-bold">Academy</p>
             </div>
 
             <p className="w-[40%] text-lg text-center text-gray-100 text-wrap font-semibold">
