@@ -6,6 +6,7 @@ import arrowImage from "@/public/arrow_icon.svg";
 import { MdDone } from "react-icons/md";
 import { Button } from "./ui/button";
 import { BsInfoCircle } from "react-icons/bs";
+import CountdownTimer from "./CountdownTimer";
 
 type Props = {};
 
@@ -24,37 +25,7 @@ const Community = (props: Props) => {
                                 <p>Reward unlocks in</p>
                             </div>
                             <div className="border border-dashed w-full border-gray-400"></div>
-                            <div className="bg-bgColour rounded-xl w-full">
-                                <div
-                                    className="flex bg-dotted-spacing-2 bg-dotted-gray-900 rounded-lg px-4 py-3 gap-4 items-center 
-                                justify-evenly text-3xl font-semibold text-gray-300 w-full"
-                                >
-                                    <div className="flex flex-col items-center justify-between gap-2">
-                                        <p>00</p>
-                                        <p className="text-base font-normal text-gray-600">
-                                            Days
-                                        </p>
-                                    </div>
-                                    <div className="flex flex-col items-center justify-between gap-2">
-                                        <p>00</p>
-                                        <p className="text-base font-normal text-gray-600">
-                                            Hrs
-                                        </p>
-                                    </div>
-                                    <div className="flex flex-col items-center justify-between gap-2">
-                                        <p>00</p>
-                                        <p className="text-base font-normal text-gray-600">
-                                            Mins
-                                        </p>
-                                    </div>
-                                    <div className="flex flex-col items-center justify-between gap-2">
-                                        <p>00</p>
-                                        <p className="text-base font-normal text-gray-600">
-                                            Sec
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <CountdownTimer />
                         </div>
                     </div>
                     <div
