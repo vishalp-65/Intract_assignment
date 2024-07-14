@@ -1,4 +1,5 @@
 import Community from "@/components/Community";
+import CryptoDictionary from "@/components/CryptoDictionary";
 import HeroSection from "@/components/HeroSection";
 import LearnerNFT from "@/components/LearnerNFT";
 import Navbar from "@/components/Navbar";
@@ -41,6 +42,13 @@ export default function Home() {
 
                 <div className="mt-20">
                     <TopProjects />
+                </div>
+
+                {/* Line break */}
+                <div className="w-full border border-gray-800 mt-14" />
+
+                <div className="mt-16">
+                    <CryptoDictionary />
                 </div>
 
                 {/* For testing */}

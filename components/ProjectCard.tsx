@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import reelIcon from "@/public/reel-icon.svg";
+import { FaPlay } from "react-icons/fa";
 
 interface cardData {
     name: string;
@@ -13,7 +14,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ projectCard }) => {
     return (
-        <div className="w-[20rem] h-[28rem] relative rounded-2xl">
+        <div className="group w-[20rem] h-[28rem] relative rounded-2xl">
             <div className="relative rounded-2xl overflow-hidden h-full">
                 <Image
                     src={projectCard.img}
@@ -30,6 +31,13 @@ const ProjectCard: React.FC<Props> = ({ projectCard }) => {
                 </p>
                 <div className="absolute cursor-pointer top-3 right-3 p-2.5 rounded-full bg-bgPrimary opacity-80 bg-transparent/80">
                     <Image src={reelIcon} alt="reelIcon" />
+                </div>
+
+                <div
+                    className="absolute top-[48%] bottom-[48%] right-[48%] left-[48%] border
+                rounded-full p-6 border-gray-500 bg-bgPrimary opacity-75"
+                >
+                    <FaPlay />
                 </div>
             </div>
         </div>
