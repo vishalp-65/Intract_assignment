@@ -54,6 +54,7 @@ const config = {
                 },
                 bgColour: "#080808",
                 bgPrimary: "#151515",
+                buttonColour: "#252525",
             },
             borderRadius: {
                 lg: "var(--radius)",
@@ -76,7 +77,10 @@ const config = {
             },
         },
     },
-    plugins: [require("tailwindcss-animate")],
+    plugins: [
+        require("tailwindcss-animate"),
+        require("tailwindcss-dotted-background"),
+    ],
 } satisfies Config;
 
 export default config;

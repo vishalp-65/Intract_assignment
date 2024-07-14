@@ -1,10 +1,10 @@
+import Community from "@/components/Community";
 import HeroSection from "@/components/HeroSection";
 import LearnerNFT from "@/components/LearnerNFT";
 import Navbar from "@/components/Navbar";
 import Quests from "@/components/Quests";
 import heroBg from "@/public/images/hero_bg.png";
 import { learnerNFTData, questsData } from "@/utils/data";
-import Image from "next/image";
 
 export default function Home() {
     return (
@@ -27,6 +27,15 @@ export default function Home() {
                         <Quests questsData={questsData[1]} />
                     </div>
                     <LearnerNFT learnerData={learnerNFTData[1]} />
+                </div>
+
+                <div className="mt-16">
+                    <Community />
+                </div>
+
+                {/* For testing */}
+                <div className="mt-96">
+                    <p>Vishal</p>
                 </div>
             </div>
         </div>
