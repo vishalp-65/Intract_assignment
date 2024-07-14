@@ -105,8 +105,8 @@ const Community = (props: Props) => {
                             and more.
                         </p>
                         <p className="text-sm">
-                            To win: make sure you've connected your Twitter and
-                            Discord accounts - and follow our criteria!
+                            To win: make sure you have connected your Twitter
+                            and Discord accounts - and follow our criteria!
                         </p>
                     </div>
                 </div>
