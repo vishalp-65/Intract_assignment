@@ -61,7 +61,7 @@ export const questsData = [
         name: "Introduction to Airdrops",
         descrption: "Your best bet to make it big in crypto!",
         xp: "1040",
-        img: "/images/crypto.png",
+        img: "/images/crypto1.png",
         totalQuests: "4",
         questses: [
             {

@@ -3,6 +3,7 @@ import LearnerNFT from "@/components/LearnerNFT";
 import Navbar from "@/components/Navbar";
 import Quests from "@/components/Quests";
 import heroBg from "@/public/images/hero_bg.png";
+import { learnerNFTData, questsData } from "@/utils/data";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,11 +16,17 @@ export default function Home() {
             >
                 <HeroSection />
 
-                <div className="px-10 mt-[-6rem] relative z-10">
-                    <Quests />
-                    <div className="absolute bottom-32 right-14">
-                        <LearnerNFT />
+                <div className="px-10 mt-[-6rem] relative z-3">
+                    <Quests questsData={questsData[0]} />
+                    <div className="absolute bottom-0 right-14">
+                        <LearnerNFT learnerData={learnerNFTData[0]} />
                     </div>
+                </div>
+                <div className="px-10 relative mt-[16rem]">
+                    <div className="absolute bottom-0 right-[23%]">
+                        <Quests questsData={questsData[1]} />
+                    </div>
+                    <LearnerNFT learnerData={learnerNFTData[1]} />
                 </div>
             </div>
         </div>
