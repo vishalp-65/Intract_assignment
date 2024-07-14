@@ -8,33 +8,37 @@ import Community from "./Community";
 import TopProjects from "./TopProjects";
 import CryptoDictionary from "./CryptoDictionary";
 import FloatButton from "./FloatButton";
+import Footer from "./Footer";
 
 type Props = {};
 
 const Container = (props: Props) => {
     return (
-        <div className="relative flex flex-col items-center justify-center">
+        <div className="relative flex flex-col items-center justify-center w-full">
             <div
-                className="bg-cover bg-center h-screen mt-16"
+                className="bg-cover min-w-full bg-center h-screen mt-16"
                 style={{ backgroundImage: `url(${heroBg.src})` }}
             >
                 <HeroSection />
 
-                <div className="px-10 mt-[-6rem] relative z-3">
-                    <Quests questsData={questsData[0]} />
-                    <div className="absolute bottom-0 right-14">
-                        <LearnerNFT learnerData={learnerNFTData[0]} />
+                <div className="max-w-[100rem] flex items-center justify-center">
+                    <div className="w-full">
+                        <div className="px-10 mt-[-6rem] relative z-3">
+                            <Quests questsData={questsData[0]} />
+                            <div className="absolute bottom-0 right-14">
+                                <LearnerNFT learnerData={learnerNFTData[0]} />
+                            </div>
+                        </div>
+                        <div className="px-10 relative mt-[16rem]">
+                            <div className="absolute bottom-0 right-[23%]">
+                                <Quests questsData={questsData[1]} />
+                            </div>
+                            <LearnerNFT learnerData={learnerNFTData[1]} />
+                        </div>
+                        <div className="mt-16">
+                            <Community />
+                        </div>
                     </div>
-                </div>
-                <div className="px-10 relative mt-[16rem]">
-                    <div className="absolute bottom-0 right-[23%]">
-                        <Quests questsData={questsData[1]} />
-                    </div>
-                    <LearnerNFT learnerData={learnerNFTData[1]} />
-                </div>
-
-                <div className="mt-16">
-                    <Community />
                 </div>
 
                 <div className="relative flex items-center justify-center mt-20">
@@ -53,11 +57,13 @@ const Container = (props: Props) => {
                     <CryptoDictionary />
                 </div>
 
-                <div className="mt-40">Vishal</div>
+                <div className="mt-16 w-full">
+                    <Footer />
+                </div>
             </div>
-            <div className="bottom-7 fixed z-50">
+            {/* <div className="bottom-7 fixed z-50">
                 <FloatButton />
-            </div>
+            </div> */}
         </div>
     );
 };

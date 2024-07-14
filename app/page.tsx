@@ -1,4 +1,3 @@
-import FloatButton from "@/components/FloatButton";
 import Navbar from "@/components/Navbar";
 import Container from "@/components/Container";
 
