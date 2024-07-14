@@ -14,7 +14,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ projectCard }) => {
     return (
-        <div className="group w-[20rem] h-[28rem] relative rounded-2xl">
+        <div className="group w-[20rem] h-[28rem] relative rounded-2xl cursor-pointer">
             <div className="relative rounded-2xl overflow-hidden h-full">
                 <Image
                     src={projectCard.img}
@@ -23,21 +23,25 @@ const ProjectCard: React.FC<Props> = ({ projectCard }) => {
                     height={450}
                     className="w-full h-full object-cover rounded-lg"
                 />
-                <div className="absolute bottom-0 h-32 blur-2xl bg-gray-800 w-full">
-                    Vishal
-                </div>
-                <p className="absolute bottom-0 text-white text-2xl font-semibold px-2">
+
+                {/* For shadow on hover */}
+                <div className="absolute top-0 left-0 opacity-0 group-hover:opacity-40 transition-opacity h-full w-full bg-black" />
+
+                <div className="absolute bottom-0 h-20 w-full rounded-xl backdrop-blur-3xl" />
+                <p className="absolute bottom-0 text-white text-2xl p-3">
                     {projectCard.name}
                 </p>
                 <div className="absolute cursor-pointer top-3 right-3 p-2.5 rounded-full bg-bgPrimary opacity-80 bg-transparent/80">
                     <Image src={reelIcon} alt="reelIcon" />
                 </div>
 
-                <div
-                    className="absolute top-[48%] bottom-[48%] right-[48%] left-[48%] border
-                rounded-full p-6 border-gray-500 bg-bgPrimary opacity-75"
-                >
-                    <FaPlay />
+                <div className="absolute top-[41%] left-[40%] hidden group-hover:block group-hover:translate-x-1 group-hover:delay-150">
+                    <div
+                        className="border rounded-full p-6 border-gray-500 
+                    bg-bgPrimary opacity-75"
+                    >
+                        <FaPlay className="w-5 h-5" />
+                    </div>
                 </div>
             </div>
         </div>
