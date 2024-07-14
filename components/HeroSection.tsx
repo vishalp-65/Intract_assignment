@@ -13,7 +13,7 @@ const HeroSection = (props: Props) => {
                 <p className="font-serif text-6xl font-bold">Academy</p>
             </div>
 
-            <p className="w-[40%] text-lg text-center text-gray-100 text-wrap font-semibold">
+            <p className="w-[80%] md:w-[40%] text-lg text-center text-gray-100 text-wrap font-semibold">
                 Intract users{" "}
                 <span className="text-gray-400">
                     have together made more than

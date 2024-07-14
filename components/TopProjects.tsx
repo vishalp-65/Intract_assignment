@@ -8,7 +8,7 @@ const TopProjects = (props: Props) => {
     return (
         <div className="flex flex-col items-center justify-between gap-12">
             <div className="flex flex-col justify-center items-center gap-2">
-                <p className="text-3xl text-gray-200 font-semibold">
+                <p className="text-3xl text-center md:text-start text-gray-200 font-semibold">
                     Top Crypto Creators and Projects to Follow
                 </p>
                 <p className="text-gray-400">

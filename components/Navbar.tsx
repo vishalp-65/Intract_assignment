@@ -12,7 +12,7 @@ type Props = {};
 const Navbar = (props: Props) => {
     return (
         <div
-            className="px-2 md:px-0 fixed top-0 left-0 right-0 flex justify-between md:justify-evenly items-center gap-2 h-16 z-50
+            className="fixed px-2 md:px-0 fixed top-0 left-0 right-0 flex justify-between md:justify-evenly items-center gap-2 h-16 z-50
         bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[1rem] border-b border-gray-700"
         >
             {/* Name logo */}

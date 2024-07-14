@@ -33,10 +33,10 @@ const Quests: React.FC<Props> = ({ questsData }) => {
     };
 
     return (
-        <div className="w-[31rem]">
+        <div className="w-screen md:w-[31rem]">
             <div
                 className={`relative bg-bgPrimary opacity-90 border-gray-300 p-5 cursor-pointer
-                 hover:bg-[#232323] z-20 ${isUp} ? rounded-t-2xl rounded-b-none: rounded-2xl`}
+                 hover:bg-[#232323] z-40 ${isUp} ? rounded-t-2xl rounded-b-none: rounded-2xl`}
                 onClick={togglePosition}
             >
                 <div className="flex justify-between items-center gap-6">

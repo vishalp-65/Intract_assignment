@@ -21,15 +21,15 @@ const Container = (props: Props) => {
             >
                 <HeroSection />
 
-                <div className="w-auto md:max-w-[100rem] flex items-center justify-center">
-                    <div className="w-full">
-                        <div className="px-10 mt-[-6rem] relative z-3">
+                <div className="w-screen md:max-w-[100rem] flex items-center justify-center">
+                    <div className="w-full sm:flex sm:flex-col sm:items-center sm:justify-center">
+                        <div className="px-1 md:px-10 mt-[-6rem] relative z-3">
                             <Quests questsData={questsData[0]} />
-                            <div className="absolute bottom-0 right-14">
+                            <div className="absolute bottom-0 right-3 md:right-14 mt-[22rem] md:mt-40">
                                 <LearnerNFT learnerData={learnerNFTData[0]} />
                             </div>
                         </div>
-                        <div className="px-10 relative mt-[16rem]">
+                        <div className="px-1 md:px-10 relative mt-[22rem] md:mt-[16rem]">
                             <div className="absolute bottom-0 right-[23%]">
                                 <Quests questsData={questsData[1]} />
                             </div>
