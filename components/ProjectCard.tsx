@@ -14,7 +14,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ projectCard }) => {
     return (
-        <div className="group w-[20rem] h-[28rem] relative rounded-2xl cursor-pointer">
+        <div className="group w-[18rem] h-[26rem] relative rounded-2xl cursor-pointer">
             <div className="relative rounded-2xl overflow-hidden h-full">
                 <Image
                     src={projectCard.img}
