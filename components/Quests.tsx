@@ -26,7 +26,7 @@ interface Props {
 }
 
 const Quests: React.FC<Props> = ({ questsData }) => {
-    const [isUp, setIsUp] = useState(true);
+    const [isUp, setIsUp] = useState(false);
 
     const togglePosition = () => {
         setIsUp((prev) => !prev);

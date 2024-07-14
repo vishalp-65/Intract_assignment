@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import LearnerNFT from "@/components/LearnerNFT";
 import Navbar from "@/components/Navbar";
 import Quests from "@/components/Quests";
+import TopProjects from "@/components/TopProjects";
 import heroBg from "@/public/images/hero_bg.png";
 import { learnerNFTData, questsData } from "@/utils/data";
 
@@ -31,6 +32,15 @@ export default function Home() {
 
                 <div className="mt-16">
                     <Community />
+                </div>
+
+                <div className="relative flex items-center justify-center mt-20">
+                    <div className="bg-[#dbd7fb] absolute -z-10 h-3 w-full blur-3xl" />
+                    <div className="border border-[#424242] w-full" />
+                </div>
+
+                <div className="mt-20">
+                    <TopProjects />
                 </div>
 
                 {/* For testing */}

@@ -100,3 +100,22 @@ export const learnerNFTData = [
         img: "/images/NFT2.png",
     },
 ];
+
+export const topCreator = [
+    {
+        name: "How to plan your retirement with crypto?",
+        img: "/images/cat.png",
+    },
+    {
+        name: "Why are there limited Bitcoin?",
+        img: "/images/bitcoin.png",
+    },
+    {
+        name: "How does Uniswap actually work?",
+        img: "/images/horse.png",
+    },
+    {
+        name: "How to spot crypto projects to invest in?",
+        img: "/images/monkey.png",
+    },
+];

@@ -40,7 +40,7 @@ const QuestsData: React.FC<Props> = ({ questsData }) => {
                             <p className="text-sm text-gray-500 text-nowrap">
                                 {quest.tasks} Tasks
                             </p>
-                            <div className="w-full py-1 border rounded-full border-gray-600"></div>
+                            <div className="w-full py-1.5 border rounded-full border-gray-600 bg-[#252525] shadow-inner transition-shadow shadow-black" />
                         </div>
                     </div>
                     <div className="bg-[#282828] p-1 rounded-full mt-16">
