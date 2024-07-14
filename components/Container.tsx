@@ -21,7 +21,7 @@ const Container = (props: Props) => {
             >
                 <HeroSection />
 
-                <div className="max-w-[100rem] flex items-center justify-center">
+                <div className="w-auto md:max-w-[100rem] flex items-center justify-center">
                     <div className="w-full">
                         <div className="px-10 mt-[-6rem] relative z-3">
                             <Quests questsData={questsData[0]} />

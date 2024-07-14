@@ -5,13 +5,14 @@ import live_tv from "@/public/live_tv.svg";
 import { navBarNames } from "@/utils/data";
 import { BiSearch } from "react-icons/bi";
 import { Button } from "./ui/button";
+import { IoMenu } from "react-icons/io5";
 
 type Props = {};
 
 const Navbar = (props: Props) => {
     return (
         <div
-            className="fixed top-0 left-0 right-0 flex justify-evenly items-center gap-2 h-16 z-50
+            className="px-2 md:px-0 fixed top-0 left-0 right-0 flex justify-between md:justify-evenly items-center gap-2 h-16 z-50
         bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[1rem] border-b border-gray-700"
         >
             {/* Name logo */}
@@ -20,7 +21,7 @@ const Navbar = (props: Props) => {
             </div>
 
             {/* Navbar links */}
-            <div className="flex items-center justify-center gap-2 text-gray-200">
+            <div className="hidden md:flex md:items-center md:justify-center md:gap-2 md:text-gray-200">
                 {navBarNames.map((item, ind) => (
                     <div key={ind} className="flex items-center">
                         <p className="p-3">{item.name}</p>
@@ -36,15 +37,17 @@ const Navbar = (props: Props) => {
             </div>
 
             {/* Search bar */}
-            <div
-                className="flex w-[25%] px-3 py-2 items-center justify-start rounded-full 
-            gap-3 bg-opacity-30 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] border border-gray-700"
-            >
-                <BiSearch className="h-6 w-6" />
-                <input
-                    className="bg-transparent text-sm bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] w-full"
-                    placeholder="Search for ecosystem, trending quests etc."
-                />
+            <div className="hidden md:block md: w-[25%]">
+                <div
+                    className="flex px-3 py-2 items-center justify-start rounded-full 
+                gap-3 bg-opacity-30 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] border border-gray-700"
+                >
+                    <BiSearch className="h-6 w-6" />
+                    <input
+                        className="bg-transparent text-sm bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] w-full"
+                        placeholder="Search for ecosystem, trending quests etc."
+                    />
+                </div>
             </div>
 
             {/* Auth buttons */}
@@ -53,6 +56,9 @@ const Navbar = (props: Props) => {
                     <Image src={live_tv} alt="live_tv" />
                 </div>
                 <Button variant="white">Sign In</Button>
+                <div className="">
+                    <IoMenu className="h-8 w-8" />
+                </div>
             </div>
         </div>
     );
