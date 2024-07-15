@@ -9,6 +9,7 @@ import TopProjects from "./TopProjects";
 import CryptoDictionary from "./CryptoDictionary";
 import FloatButton from "./FloatButton";
 import Footer from "./Footer";
+import Chatbot from "./Chatbot";
 
 type Props = {};
 
@@ -21,8 +22,8 @@ const Container = (props: Props) => {
             >
                 <HeroSection />
 
-                <div className="w-screen md:max-w-[100rem] flex items-center justify-center">
-                    <div className="w-full sm:flex sm:flex-col sm:items-center sm:justify-center">
+                <div className="max-w-[100rem] flex items-center justify-center">
+                    <div className="w-full">
                         <div className="px-1 md:px-10 mt-[-6rem] relative z-3">
                             <Quests questsData={questsData[0]} />
                             <div className="absolute bottom-0 right-3 md:right-14 mt-[22rem] md:mt-40">
@@ -61,9 +62,13 @@ const Container = (props: Props) => {
                     <Footer />
                 </div>
             </div>
-            {/* <div className="bottom-7 fixed z-50">
+            <div className="bottom-7 fixed z-50">
                 <FloatButton />
-            </div> */}
+            </div>
+
+            <div className="bottom-5 right-5 fixed z-50">
+                <Chatbot />
+            </div>
         </div>
     );
 };

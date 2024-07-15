@@ -12,7 +12,7 @@ type Props = {};
 const Navbar = (props: Props) => {
     return (
         <div
-            className="fixed px-2 md:px-0 fixed top-0 left-0 right-0 flex justify-between md:justify-evenly items-center gap-2 h-16 z-50
+            className="fixed px-2 md:px-0 top-0 left-0 right-0 flex justify-between md:justify-evenly items-center gap-2 h-16 z-50
         bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[1rem] border-b border-gray-700"
         >
             {/* Name logo */}
@@ -56,7 +56,7 @@ const Navbar = (props: Props) => {
                     <Image src={live_tv} alt="live_tv" />
                 </div>
                 <Button variant="white">Sign In</Button>
-                <div className="">
+                <div className="block md:hidden cursor-pointer">
                     <IoMenu className="h-8 w-8" />
                 </div>
             </div>
