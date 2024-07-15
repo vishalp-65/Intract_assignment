@@ -12,7 +12,7 @@ type Props = {};
 
 const Community = (props: Props) => {
     return (
-        <div className="flex items-end justify-end mr-[10%]">
+        <div className="flex items-end justify-end mr-[9%]">
             <div className="sm:flex sm:flex-col md:flex md:flex-row items-start justify-between gap-20">
                 <div className="w-[21rem]">
                     <div className="p-4 border border-gray-700 rounded-lg bg-bgPrimary">

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import coinImg from "@/public/coin.svg";
 import { VscTriangleUp } from "react-icons/vsc";
 import QuestsData from "./QuestsData";
-import { questsData } from "@/utils/data";
 
 interface Questses {
     name: string;
@@ -33,7 +32,7 @@ const Quests: React.FC<Props> = ({ questsData }) => {
     };
 
     return (
-        <div className="w-screen px-2 md:px-0 md:w-[31rem]">
+        <div className="w-96 px-2 md:px-0 md:w-[31rem]">
             <div
                 className={`relative bg-bgPrimary opacity-90 border-gray-300 p-5 cursor-pointer
                  hover:bg-[#232323] z-40 ${isUp} ? rounded-t-2xl rounded-b-none: rounded-2xl`}
@@ -77,6 +76,8 @@ const Quests: React.FC<Props> = ({ questsData }) => {
                     <VscTriangleUp className="text-white" />
                 </div>
             </div>
+
+            {/* Qusets data list */}
             {isUp ? (
                 <div className="block">
                     <QuestsData questsData={questsData.questses} />

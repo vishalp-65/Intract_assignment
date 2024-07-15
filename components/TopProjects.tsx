@@ -16,6 +16,7 @@ const TopProjects = (props: Props) => {
                 </p>
             </div>
 
+            {/* Project cards */}
             <div className="flex flex-wrap items-center justify-evenly gap-4">
                 {topCreator.map((item, ind) => (
                     <ProjectCard key={ind} projectCard={item} />

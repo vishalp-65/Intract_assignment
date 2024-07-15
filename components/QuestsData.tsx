@@ -15,7 +15,7 @@ interface Props {
 const QuestsData: React.FC<Props> = ({ questsData }) => {
     return (
         <div
-            className="bg-[#101010] flex flex-col gap-2 p-3 w-[31rem] text-gray-400 h-[22rem] 
+            className="bg-[#101010] flex flex-col gap-2 p-3 w-[23rem] md:w-[31rem] text-gray-400 h-[22rem] 
         overflow-y-scroll rounded rounded-b-3xl"
         >
             {questsData.map((quest, index) => (

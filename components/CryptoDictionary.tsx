@@ -20,17 +20,22 @@ const CryptoDictionary = (props: Props) => {
             <div className="relative flex items-center justify-center rounded-xl">
                 <Image src={web3} alt="web3 image" className="rounded-xl" />
 
-                <div className="absolute bottom-3 right-5 p-5 rounded-full bg-bgPrimary border border-gray-700 opacity-60">
-                    <IoBookOutline className="w-6 h-6" />
+                <div
+                    className="absolute bottom-3 right-5 p-4 md:p-5 rounded-full 
+                bg-bgPrimary border border-gray-700 opacity-60"
+                >
+                    <IoBookOutline className="w-4 h-4 md:h-6 md:w-6" />
                 </div>
 
                 <div className="absolute bottom-1 left-2 blur-3xl bg-black w-80 h-20" />
 
                 <div className="absolute bottom-3 left-3 flex flex-col items-start justify-between gap-0.5">
-                    <p className="text-2xl text-gray-300 font-semibold">
+                    <p className="text-xl md:text-2xl text-gray-300 font-semibold">
                         Web3 + Degen Glossary
                     </p>
-                    <p className="text-gray-400">Your own crypto dictionary</p>
+                    <p className="text-gray-400 text-sm md:text-base">
+                        Your own crypto dictionary
+                    </p>
                 </div>
             </div>
         </div>
