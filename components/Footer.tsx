@@ -7,8 +7,8 @@ type Props = {};
 const Footer = (props: Props) => {
     return (
         <div
-            className="w-full border border-t-gray-700 flex mt-16 pt-16 flex-col items-start 
-        justify-between py-8 px-6 bg-black"
+            className="border-t border-t-gray-700 flex mt-16 pt-16 flex-col items-center 
+        justify-evenly py-8 px-2 bg-black"
         >
             <div className="flex flex-wrap items-start justify-start gap-5">
                 <div className="flex flex-col items-start justify-between gap-5">

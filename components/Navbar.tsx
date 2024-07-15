@@ -49,7 +49,7 @@ const Navbar = (props: Props) => {
                     className="flex px-3 py-2 items-center justify-start rounded-full 
                 gap-3 bg-opacity-30 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] border border-gray-700"
                 >
-                    <BiSearch className="h-6 w-6" />
+                    <BiSearch className="h-6 w-6 text-gray-400" />
                     <input
                         className="bg-transparent text-sm bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] w-full"
                         placeholder="Search for ecosystem, trending quests etc."
